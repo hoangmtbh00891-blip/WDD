@@ -1,0 +1,91 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #4e73df, #1cc88a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Khung chứa form hoặc profile */
+.login-container, #profile {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 320px;
+    text-align: center;
+}
+
+/* Form */
+.login-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tiêu đề */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4e73df;
+}
+
+/* Nút */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #2e59d9;
+}
+
+/* Profile */
+#profile {
+    display: none; /* Ẩn profile khi chưa login */
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #4e73df;
+}
+
+/* Username hiển thị trong profile */
+#displayName {
+    font-weight: bold;
+    color: #4e73df;
+    margin-bottom: 15px;
+}
